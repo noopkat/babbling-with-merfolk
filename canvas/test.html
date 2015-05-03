@@ -74,6 +74,15 @@
         stage.addChild(water);
       }
 
+      function createSeabed() {
+        water = new createjs.Shape();
+        var g = sky.graphics;
+
+        g.beginFill("#714115");
+        g.drawRect(0, canvas.height - 80, canvas.width, 80);
+        stage.addChild(water);
+      }
+
       function init() {
         console.log('init');
         canvas = document.getElementById('test');
@@ -85,9 +94,10 @@
 
         createSky();
         createWater();
+        createSeabed();
         createTugboat();
         fishImg = loader.getResult('fish');
-        fish1 = new createFish(0.2, 700, (-fishImg.width * 0.2), 'fish-right');
+        fish1 = new createFish(0.3, 700, (-fishImg.width * 0.3), 'fish-right');
         fish2 = new createFish(0.7, 600, (canvas.width + fishImg.width * 0.7), 'fish');
         fish3 = new createFish(0.5, 800, (canvas.width + fishImg.width * 0.5), 'fish');
 
