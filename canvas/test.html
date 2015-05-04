@@ -25,6 +25,7 @@
 
       var manifest = [
         {src: 'tugboat.jpg', id: 'tugboat'},
+        {src: 'boat.png', id: 'boat'},
         {src: 'fish.png', id: 'fish'},
         {src: 'fish-right.png', id: 'fish-right'}
       ];
@@ -34,12 +35,12 @@
       loader.loadManifest(manifest, true, './assets/dummy/');
 
       function createTugboat() {
-        var tugboatImg = loader.getResult('tugboat');
+        var tugboatImg = loader.getResult('boat');
         tugboat = new createjs.Shape();
         tugboat.graphics.beginBitmapFill(tugboatImg).drawRect(0, 0, tugboatImg.width, tugboatImg.height);
-        // tugboat.scaleX = 0.8;
-        // tugboat.scaleY = 0.8;
-        tugboat.x = 200;
+        tugboat.scaleX = 0.8;
+        tugboat.scaleY = 0.8;
+        tugboat.x = 140;
         tugboat.y = posY;
         stage.addChild(tugboat);
       }
@@ -69,16 +70,29 @@
         water = new createjs.Shape();
         var g = sky.graphics;
 
-        g.beginFill("#82DAFF");
+        // g.beginFill("#82DAFF");
+        g.beginFill("#354C94");
         g.drawRect(0, 300, canvas.width, canvas.height - 300);
         stage.addChild(water);
       }
+
+      // function createBitmapWater() {
+      //   seaImg = loader.getResult('sea');
+      //   //seaImg.scaleX = 0.5;
+      //   sea = new createjs.Shape();
+      //   sea.graphics.beginBitmapFill(seaImg).drawRect(0, 0, seaImg.width, seaImg.height);
+      //   sea.scaleX = 0.4;
+      //   sea.scaleY = 0.4;
+      //   sea.x = 0;
+      //   sea.y = 300;
+      //   stage.addChild(sea);
+      // }
 
       function createSeabed() {
         water = new createjs.Shape();
         var g = sky.graphics;
 
-        g.beginFill("#714115");
+        g.beginFill("#59483E");
         g.drawRect(0, canvas.height - 80, canvas.width, 80);
         stage.addChild(water);
       }
@@ -109,8 +123,8 @@
 
         // move boat
         posY += 0.02;
-        var value = Math.sin(posY) * 20;
-        tugboat.y = value + 200;
+        var value = Math.sin(posY) * 10;
+        tugboat.y = value + 180;
 
         // move fish
         // left to right
