@@ -1,0 +1,16 @@
+h1 span {
+  font-size: 0.35em;
+  color: #666;
+  padding-top: 0.5em;
+}
+
+iframe {
+  height: 1000px;
+  width: 100%;
+  border: 0px solid #ff0000;
+  overflow: hidden;
+}
+
+.coverslide {
+  background-color: #D2F8FF;
+}
