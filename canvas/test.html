@@ -122,7 +122,8 @@
       }
 
       function tick(event) {
-
+        // it's possible to move the entire stage which would be preferable to using a container I guess
+        //stage.y = stage.y - 1;
         // move boat
         posY += 0.02;
         var value = Math.sin(posY) * 10;
