@@ -38,15 +38,16 @@ works fine.
       var $scaler = $slide.find('.' + options.classes.scaleSlideWrapper);
       var shouldScale = $container.hasClass(options.classes.scale);
       var scale = shouldScale ? baseHeight / slideHeight : 1;
-
-      if (scale === 1) {
-        $scaler.css('transform', '');
-      }
-      else {
-        $scaler.css('transform', 'scale(' + scale + ')');
-        window.setTimeout(function() {
-          $container.scrollTop(0)
-        }, 1);
+      if (!$slide.hasClass('noscale')) {
+        if (scale === 1) {
+          $scaler.css('transform', '');
+        }
+        else {
+          $scaler.css('transform', 'scale(' + scale + ')');
+          window.setTimeout(function() {
+            $container.scrollTop(0)
+          }, 1);
+        }
       }
     });
   };

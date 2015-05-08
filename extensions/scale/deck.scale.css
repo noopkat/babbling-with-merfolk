@@ -18,3 +18,9 @@
   -ms-transform: none !important;
   transform: none !important;
 }
+
+iframe {
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+}

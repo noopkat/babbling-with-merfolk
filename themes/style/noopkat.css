@@ -33,14 +33,13 @@ h3 {
 }
 
 iframe {
-  height: 1000px;
+  height: 1920px;
   width: 100%;
   border: 0px solid #ff0000;
   overflow: hidden;
 }
 
 .coverslide {
-  /*background-color: #6BC199;*/
   background-color: #D1E9AA;
 }
 
@@ -66,4 +65,8 @@ iframe {
 img.fade  {
   opacity: 0.6;
   z-index: 1;
+}
+
+.deck-container > .slide.noscale {
+  padding:0;
 }
