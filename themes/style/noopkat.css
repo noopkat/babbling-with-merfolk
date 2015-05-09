@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 h2 {
-  margin: 35px 0 25px 0;
+  margin: 35px 0 35px 0;
   font-size: 3.5em;
   font-style: italic;
 }
@@ -24,6 +24,10 @@ h2 {
 h3 {
   margin: 30 0 20px 0;
   font-size: 2em;
+}
+
+a {
+  color: #132A4E !important;
 }
 
 .slide {
@@ -37,6 +41,19 @@ iframe {
   width: 100%;
   border: 0px solid #ff0000;
   overflow: hidden;
+}
+
+.fullimage {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .coverslide {
@@ -62,8 +79,22 @@ iframe {
   opacity: 0.3;
 }
 
+.whiteout {
+  background-color: #FFF;
+}
+
 img.fade  {
   opacity: 0.6;
+  z-index: 1;
+}
+
+img.superfade  {
+  opacity: 0.3;
+  z-index: 1;
+}
+
+img.epicfade  {
+  opacity: 0.1;
   z-index: 1;
 }
 
