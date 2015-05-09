@@ -41,6 +41,7 @@ iframe {
   width: 100%;
   border: 0px solid #ff0000;
   overflow: hidden;
+  position: absolute;
 }
 
 .fullimage {
