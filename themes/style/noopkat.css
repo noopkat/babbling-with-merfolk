@@ -102,3 +102,11 @@ img.epicfade  {
 .deck-container > .slide.noscale {
   padding:0;
 }
+
+.snippet-container {
+  font-size: 2em;
+}
+
+pre {
+  border: none;
+}

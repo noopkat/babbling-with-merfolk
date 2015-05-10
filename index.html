@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Your deck.js Presentation</title>
+  <title>babbling with merfolk / suz hinton</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="core/deck.core.css">
@@ -21,6 +21,7 @@
   <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
   <link rel="stylesheet" media="screen" href="themes/style/mnml.css">
   <link rel="stylesheet" media="screen" href="themes/style/noopkat.css">
+  <link rel="stylesheet" media="screen" href="extensions/highlighter/shi_vim.min.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
   <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
@@ -39,7 +40,7 @@
     <section class="slide coverslide">
       <h1>babbling with merfolk<br/>
       <span>- between the layers of JS hardware -</span></h1>
-      <img src="img/mermaid01.jpg" alt="whimsical illustration of the ocean with a protruding mermaid tail" />
+      <!-- <img src="img/mermaid01.jpg" alt="whimsical illustration of the ocean with a protruding mermaid tail" /> -->
     </section>
 
     <section class="slide">
@@ -121,16 +122,94 @@
       <img src="img/led-scene-0.gif" width="1000" alt="illustration of an Arduino Uno with LED connected to pin 13, and blinking green" />
     </section>
 
-    <section class="slide">
-      <h1>More</h1>
+    <section class="slide whiteout">
+      <h2>hello world</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_keyword">var</span> five <span class="sh_symbol">=</span> <span class="sh_function">require</span><span class="sh_symbol">(</span><span class="sh_string">"johnny-five"</span><span class="sh_symbol">);</span></li><li><span class="sh_keyword">var</span> board <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> five<span class="sh_symbol">.</span><span class="sh_function">Board</span><span class="sh_symbol">();</span></li><li></li><li>board<span class="sh_symbol">.</span><span class="sh_function">on</span><span class="sh_symbol">(</span><span class="sh_string">"ready"</span><span class="sh_symbol">,</span> <span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_keyword">var</span> led <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> five<span class="sh_symbol">.</span><span class="sh_function">Led</span><span class="sh_symbol">(</span><span class="sh_number">13</span><span class="sh_symbol">);</span></li><li>  led<span class="sh_symbol">.</span><span class="sh_function">blink</span><span class="sh_symbol">(</span><span class="sh_number">500</span><span class="sh_symbol">);</span></li><li><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+      var five = require("johnny-five");
+        var board = new five.Board();
+
+        board.on("ready", function() {
+          var led = new five.Led(13);
+          led.blink(500);
+        });</pre></div></div>
     </section>
 
-    <section class="slide">
-      <h1>and More</h1>
+    <section class="slide whiteout">
+      <h2>deeper</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_function">setInterval</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">toggle</span><span class="sh_symbol">();</span></li><li> <span class="sh_cbracket">}</span><span class="sh_symbol">.</span><span class="sh_function">bind</span><span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">),</span> rate<span class="sh_symbol">);</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+      setInterval(function() {
+        this.toggle();
+       }.bind(this), rate);</pre></div></div>
+    </section>
+
+    <section class="slide whiteout">
+      <h2>deeper again</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_comment">// turn on</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span>value <span class="sh_symbol">=</span> <span class="sh_number">255</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">write</span><span class="sh_symbol">();</span></li><li></li><li><span class="sh_comment">// turn off</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span>value <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">write</span><span class="sh_symbol">();</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+      // turn on
+      this.value = 255;
+      this.write();
+
+      // turn on
+      this.value = 0;
+      this.write();
+
+
+      </pre></div></div>
+    </section>
+
+    <section class="slide whiteout">
+      <h2>deeper again</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_comment">// turn on</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span>value <span class="sh_symbol">=</span> <span class="sh_number">255</span><span class="sh_symbol">;</span> <span class="sh_comment">// <= brightness</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">write</span><span class="sh_symbol">();</span></li><li></li><li><span class="sh_comment">// turn off</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span>value <span class="sh_symbol">=</span> <span class="sh_number">0</span> <span class="sh_comment">// <= brightness</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">write</span><span class="sh_symbol">();</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">// turn on
+      this.value = 255; // <= brightness
+      this.write();
+
+      // turn on
+      this.value = 0; // <= brightness
+      this.write();
+
+
+      </pre></div></div>
+    </section>
+
+    <section class="slide whiteout">
+      <h2>deeper again</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_comment">// turn on</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span>value <span class="sh_symbol">=</span> <span class="sh_number">255</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">write</span><span class="sh_symbol">();</span> <span class="sh_comment">// <= ??</span></li><li></li><li><span class="sh_comment">// turn off</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span>value <span class="sh_symbol">=</span> <span class="sh_number">0</span><span class="sh_symbol">;</span></li><li><span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">write</span><span class="sh_symbol">();</span> <span class="sh_comment">// <= ??</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">// turn on
+      this.value = 255; 
+      this.write(); // <= ??
+
+      // turn on
+      this.value = 0; 
+      this.write(); // <= ??
+
+
+      </pre></div></div>
     </section>
 
     <section class="slide noscale">
-      <iframe src="canvas/test.html" seamless="seamless" scrolling="no"></iframe>
+     <h1>placeholder for computer and arduino chatting picture</h1>
+    </section>
+
+    <section class="slide noscale">
+     <h1>placeholder for Arduino pin callout picture sequence</h1>
+    </section>
+
+    <section class="slide noscale">
+      <h2>placeholder for Arduino ATmega328 'office' picture sequence</h2>
+      <ul>
+        <li>copper lines from pin to ATmega</li>
+        <li>roof</li>
+      </ul>
+    </section>
+
+    <section class="slide noscale">
+     <h2>placeholder for cat office/switchboard sequence</h2>
+     <ul>
+      <li>DDR</li>
+      <li>PIN</li>
+      <li>PORT</li>
+      <li>Arduino core lib</li>
+      <li>switchboard</li>
+     </ul>
     </section>
 
     <!-- End slides. -->
@@ -172,6 +251,7 @@
 <!-- <script src="extensions/navigation/deck.navigation.js"></script> -->
 <script src="extensions/scale/deck.scale.js"></script>
 <script src="extensions/iframe/deck.iframes.js"></script>
+<script src="extensions/highlighter/shi_jquery.min.js"></script>
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
