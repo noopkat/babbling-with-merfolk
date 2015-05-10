@@ -136,10 +136,18 @@
 
     <section class="slide whiteout">
       <h2>deeper</h2>
-      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_function">setInterval</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">toggle</span><span class="sh_symbol">();</span></li><li> <span class="sh_cbracket">}</span><span class="sh_symbol">.</span><span class="sh_function">bind</span><span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">),</span> rate<span class="sh_symbol">);</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_function">setInterval</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">toggle</span><span class="sh_symbol">();</span></li><li><span class="sh_cbracket">}</span><span class="sh_symbol">.</span><span class="sh_function">bind</span><span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">),</span> rate<span class="sh_symbol">);</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
       setInterval(function() {
         this.toggle();
-       }.bind(this), rate);</pre></div></div>
+      }.bind(this), rate);</pre></div></div>
+    </section>
+
+    <section class="slide whiteout">
+      <h2>deeper</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_function">setInterval</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_keyword">this</span><span class="sh_symbol">.</span><span class="sh_function">toggle</span><span class="sh_symbol">();</span> <span class="sh_comment">// <= ??</span></li><li><span class="sh_cbracket">}</span><span class="sh_symbol">.</span><span class="sh_function">bind</span><span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">),</span> rate<span class="sh_symbol">);</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+      setInterval(function() {
+        this.toggle(); // <= ??
+      }.bind(this), rate);</pre></div></div>
     </section>
 
     <section class="slide whiteout">
