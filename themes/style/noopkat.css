@@ -90,6 +90,18 @@ iframe {
   background-color: #FFF;
 }
 
+.inverseslide {
+  background-color: #236678;
+  
+}
+
+.inverseslide h1 {
+  color: #D1E9AA;
+  border-bottom: 5px #6BC199 solid;
+  display:inline-block;
+}
+
+
 img.fade  {
   opacity: 0.6;
   z-index: 1;
