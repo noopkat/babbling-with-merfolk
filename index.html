@@ -78,8 +78,12 @@
       <img src="img/purr02.jpg" alt="iPhone on table with text messages of kitten pictures displaying" />
     </section>
 
+    <section class="slide">
+      <h1>how</h1>
+    </section>
+
     <section class="slide whiteout">
-      <h2>micro-controllers</h2>
+      <h2>arduino uno</h2>
       <img src="img/arduino-fritz.png" alt="detailed illustration of an Uno edition of the Arduino" />
     </section>
 
@@ -137,6 +141,18 @@
         board.on("ready", function() {
           var led = new five.Led(13);
           led.blink(500);
+        });</pre></div></div>
+    </section>
+
+    <section class="slide whiteout">
+      <h2>hello world</h2>
+      <div class="snippet-container"><div class="sh_vim snippet-wrap"><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_keyword">var</span> five <span class="sh_symbol">=</span> <span class="sh_function">require</span><span class="sh_symbol">(</span><span class="sh_string">"johnny-five"</span><span class="sh_symbol">);</span></li><li><span class="sh_keyword">var</span> board <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> five<span class="sh_symbol">.</span><span class="sh_function">Board</span><span class="sh_symbol">();</span></li><li></li><li>board<span class="sh_symbol">.</span><span class="sh_function">on</span><span class="sh_symbol">(</span><span class="sh_string">"ready"</span><span class="sh_symbol">,</span> <span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>  <span class="sh_keyword">var</span> led <span class="sh_symbol">=</span> <span class="sh_keyword">new</span> five<span class="sh_symbol">.</span><span class="sh_function">Led</span><span class="sh_symbol">(</span><span class="sh_number">13</span><span class="sh_symbol">);</span></li><li>  led<span class="sh_symbol">.</span><span class="sh_function">blink</span><span class="sh_symbol">(</span><span class="sh_number">500</span><span class="sh_symbol">);</span> <span class="sh_comment">// <= ??</span></li><li><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+      var five = require("johnny-five");
+        var board = new five.Board();
+
+        board.on("ready", function() {
+          var led = new five.Led(13);
+          led.blink(500); // <= ??
         });</pre></div></div>
     </section>
 
