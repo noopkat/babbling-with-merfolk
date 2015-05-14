@@ -48,6 +48,7 @@ iframe {
   border: 0px solid #ff0000;
   overflow: hidden;
   position: absolute;
+  z-index:-1;
 }
 
 .fullimage {
@@ -92,7 +93,7 @@ iframe {
 
 .inverseslide {
   background-color: #236678;
-  
+
 }
 
 .inverseslide h1 {
