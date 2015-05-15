@@ -2,19 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>catscene_ddr</title>
+<title>catscene_pin</title>
 
 <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
 <script src="http://code.createjs.com/tweenjs-0.5.1.min.js"></script>
 <script src="http://code.createjs.com/movieclip-0.7.1.min.js"></script>
-<script src="catscene_ddr.js"></script>
+<script src="catscene_pin.js"></script>
 
 <script>
 var canvas, stage, exportRoot;
 
 function init() {
 	canvas = document.getElementById("canvas");
-	exportRoot = new lib.catscene_ddr();
+	exportRoot = new lib.catscene_pin();
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);
