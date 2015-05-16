@@ -30,19 +30,6 @@ lib.properties = {
 p.nominalBounds = new cjs.Rectangle(0,0,52.9,14.3);
 
 
-(lib.pin12sign = function() {
-	this.initialize();
-
-	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#5E5749").s().p("AApCEQgPgJAAgMQAAgLAHgGQAGgHAKAAQAGAAAGAFQAKAGAJADQANACAXAAQAoABARgLQARgKAAgSQAAgOgKgNQgKgNgRgHQgKgEgXgCQgMAAgFgHQgHgFAAgIQABgKAGgGQAHgHAKAAIAXAAQAKgBAIgFQAJgFAGgIQAEgIAAgJQAAgPgMgKQgMgLgaAAQghAAgRATIgIAHIgKACQgJAAgHgGQgHgHABgJQAAgQAUgOQAdgUAsgBQAqAAAaAYQAYAYAAAhQABARgIAQQgIAPgOANQAUALAJASQAKASAAAWQAAAYgNAVQgMATgZALQgZALgogBQg1ABgagRgAjMCOQgQAAgHgGQgHgGAAgKQAAgKAHgHQAHgGAQAAIAtAAIAAi6Ig3ANQgIABgGgIQgGgGgBgKQABgJAEgFQAFgGAPgDIBggaIAAD1IAuAAQAQAAAHAGQAHAHAAAKQAAAKgHAGQgHAGgQAAg");
-	this.shape.setTransform(23.6,14.9);
-
-	this.addChild(this.shape);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,47.2,29.8);
-
-
 (lib.switchboardbackcopy = function() {
 	this.initialize();
 
@@ -141,32 +128,6 @@ p.nominalBounds = new cjs.Rectangle(-1,-1,75.9,117.1);
 	this.addChild(this.shape_5,this.shape_4,this.shape_3,this.shape_2,this.shape_1,this.shape);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(-1,-1,75.9,117.1);
-
-
-(lib.pin12signcopy = function() {
-	this.initialize();
-
-	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#5E5749").s().p("AApCEQgPgJAAgMQAAgLAHgGQAGgHAKAAQAGAAAGAFQAKAGAJADQANACAXAAQAoABARgLQARgKAAgSQAAgOgKgNQgKgNgRgHQgKgEgXgCQgMAAgFgHQgHgFAAgIQABgKAGgGQAHgHAKAAIAXAAQAKgBAIgFQAJgFAGgIQAEgIAAgJQAAgPgMgKQgMgLgaAAQghAAgRATIgIAHIgKACQgJAAgHgGQgHgHABgJQAAgQAUgOQAdgUAsgBQAqAAAaAYQAYAYAAAhQABARgIAQQgIAPgOANQAUALAJASQAKASAAAWQAAAYgNAVQgMATgZALQgZALgogBQg1ABgagRgAjMCOQgQAAgHgGQgHgGAAgKQAAgKAHgHQAHgGAQAAIAtAAIAAi6Ig3ANQgIABgGgIQgGgGgBgKQABgJAEgFQAFgGAPgDIBggaIAAD1IAuAAQAQAAAHAGQAHAHAAAKQAAAKgHAGQgHAGgQAAg");
-	this.shape.setTransform(23.6,14.9);
-
-	this.addChild(this.shape);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,47.2,29.8);
-
-
-(lib.pin12sign_1 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#5E5749").s().p("AApCEQgPgJAAgMQAAgLAHgGQAGgHAKAAQAGAAAGAFQAKAGAJADQANACAXAAQAoABARgLQARgKAAgSQAAgOgKgNQgKgNgRgHQgKgEgXgCQgMAAgFgHQgHgFAAgIQABgKAGgGQAHgHAKAAIAXAAQAKgBAIgFQAJgFAGgIQAEgIAAgJQAAgPgMgKQgMgLgaAAQghAAgRATIgIAHIgKACQgJAAgHgGQgHgHABgJQAAgQAUgOQAdgUAsgBQAqAAAaAYQAYAYAAAhQABARgIAQQgIAPgOANQAUALAJASQAKASAAAWQAAAYgNAVQgMATgZALQgZALgogBQg1ABgagRgAjMCOQgQAAgHgGQgHgGAAgKQAAgKAHgHQAHgGAQAAIAtAAIAAi6Ig3ANQgIABgGgIQgGgGgBgKQABgJAEgFQAFgGAPgDIBggaIAAD1IAuAAQAQAAAHAGQAHAHAAAKQAAAKgHAGQgHAGgQAAg");
-	this.shape_1.setTransform(23.6,14.9);
-
-	this.addChild(this.shape_1);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,47.2,29.8);
 
 
 (lib.hatcopy = function() {
@@ -849,16 +810,13 @@ p.nominalBounds = new cjs.Rectangle(-975.7,-540,538.1,302.3);
 	this.initialize();
 
 	// Layer 1
-	this.instance = new lib.pin12sign("synched",0);
-	this.instance.setTransform(1527.7,452.2,1,1,0,0,0,23.6,14.9);
+	this.instance = new lib.ddrb_sign_1("synched",0);
+	this.instance.setTransform(962.4,171.1,4.812,4.813,0,0,0,27.1,6.8);
 
-	this.instance_1 = new lib.ddrb_sign_1("synched",0);
-	this.instance_1.setTransform(962.4,171.1,4.812,4.813,0,0,0,27.1,6.8);
+	this.instance_1 = new lib.cat_office_1();
+	this.instance_1.setTransform(944.8,554.6,3.809,3.809,0,0,0,-727.7,-394.4);
 
-	this.instance_2 = new lib.cat_office_1();
-	this.instance_2.setTransform(944.8,554.6,3.809,3.809,0,0,0,-727.7,-394.4);
-
-	this.addChild(this.instance_2,this.instance_1,this.instance);
+	this.addChild(this.instance_1,this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,2049.5,1151.2);
 
@@ -867,16 +825,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,2049.5,1151.2);
 	this.initialize();
 
 	// Layer 1
-	this.instance = new lib.pin12signcopy("synched",0);
-	this.instance.setTransform(1527.7,452.2,1,1,0,0,0,23.6,14.9);
+	this.instance = new lib.portb_sign("synched",0);
+	this.instance.setTransform(985.3,171.3,4.577,4.577,0,0,0,33.5,7.2);
 
-	this.instance_1 = new lib.portb_sign("synched",0);
-	this.instance_1.setTransform(985.3,171.3,4.577,4.577,0,0,0,33.5,7.2);
+	this.instance_1 = new lib.cat_officecopy();
+	this.instance_1.setTransform(944.8,554.6,3.809,3.809,0,0,0,-727.7,-394.4);
 
-	this.instance_2 = new lib.cat_officecopy();
-	this.instance_2.setTransform(944.8,554.6,3.809,3.809,0,0,0,-727.7,-394.4);
-
-	this.addChild(this.instance_2,this.instance_1,this.instance);
+	this.addChild(this.instance_1,this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,2049.5,1151.2);
 
@@ -885,16 +840,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,2049.5,1151.2);
 	this.initialize();
 
 	// Layer 1
-	this.instance = new lib.pin12sign_1("synched",0);
-	this.instance.setTransform(1527.7,452.2,1,1,0,0,0,23.6,14.9);
+	this.instance = new lib.ddrb_sign("synched",0);
+	this.instance.setTransform(962.4,171.1,4.812,4.813,0,0,0,27.1,6.8);
 
-	this.instance_1 = new lib.ddrb_sign("synched",0);
-	this.instance_1.setTransform(962.4,171.1,4.812,4.813,0,0,0,27.1,6.8);
+	this.instance_1 = new lib.cat_office();
+	this.instance_1.setTransform(944.8,554.6,3.809,3.809,0,0,0,-727.7,-394.4);
 
-	this.instance_2 = new lib.cat_office();
-	this.instance_2.setTransform(944.8,554.6,3.809,3.809,0,0,0,-727.7,-394.4);
-
-	this.addChild(this.instance_2,this.instance_1,this.instance);
+	this.addChild(this.instance_1,this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,2049.5,1151.2);
 
@@ -905,7 +857,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2049.5,1151.2);
 
 	// Layer 2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(13,1,1).p("EhLAhWQMAAACtcEBLBhXMMAAACuZEAAAhXMMAAACuZ");
+	this.shape.graphics.f().s("#000000").ss(13,1,1).p("EAAAhXMMAAACuZEBLBhXMMAAACuZEhLAhWQMAAACtc");
 	this.shape.setTransform(968.2,538.1);
 
 	// Layer 1
