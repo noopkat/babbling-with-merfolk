@@ -18,7 +18,7 @@ h1, h2 {
 
 h2 {
   margin: 35px 0 35px 0;
-  font-size: 3.5em;
+  font-size: 4em;
   /*font-style: italic;*/
   font-style: normal;
 }
@@ -39,7 +39,17 @@ a {
 .slide {
   padding:20px;
   margin:0;
-  background-color: #D1E9AA;
+  /*background-color: #D1E9AA;*/
+  background-color: #fff;
+}
+
+.slide ul, ol {
+  margin-top: 6em;
+  list-style-type: square;
+}
+
+.slide li {
+  margin-bottom: 2em;
 }
 
 iframe {
@@ -89,6 +99,21 @@ iframe {
 
 .whiteout {
   background-color: #FFF;
+}
+
+.blackout {
+  background-color: #000;
+}
+
+.blackout pre {
+  background-color: #000;
+  color: #FFF;
+  font-style: normal !important;
+  font-family: "Courier New"
+}
+
+.blackout h1 {
+  border-bottom: none;
 }
 
 .inverseslide {
