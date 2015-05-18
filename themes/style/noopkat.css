@@ -52,6 +52,10 @@ a {
   margin-bottom: 2em;
 }
 
+.slide ul.snippet-no-num li, ol.snippet-no-num li {
+   margin: 0 !important;
+}
+
 iframe {
   height: 1920px;
   width: 100%;
