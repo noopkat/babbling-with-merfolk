@@ -43,7 +43,7 @@ p.nominalBounds = new cjs.Rectangle(-10.5,0,273,71.1);
 	this.shape.setTransform(36.9,64.2);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#999999").ss(1,1,1).p("AhRC9IAAgDIAJAAAhRC9IgCAAIAAmEICjAAIAAGBIAAADIgHAAAhIC9IgJAAABQD5IAAAUIihAAIAAgUIggAAIAAoEIDkAAIAAIEIgjAAIgHAAAhID5IgJAAIAAg8ABJC6IAHAAABQC9IAAA8");
+	this.shape_1.graphics.f().s("#999999").ss(1,1,1).p("AhIC9IgJAAIAAgDIAJAAAhRC9IgCAAIAAmEICjAAIAAGBAhID5IgJAAIggAAIAAoEIDkAAIAAIEIgjAAIAAAUIihAAIAAgUIAAg8ABJC6IAHAAIAAADIgHAAABQD5IgHAAABQC9IAAA8");
 	this.shape_1.setTransform(37.3,56.5);
 
 	this.shape_2 = new cjs.Shape();
@@ -55,7 +55,7 @@ p.nominalBounds = new cjs.Rectangle(-10.5,0,273,71.1);
 	this.shape_3.setTransform(36.9,64.2);
 
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#CCCCCC").s().p("AhJEKIAAgPIAAg8IAAgDIAAgDICSAAIAAADIAAADIAAA8IAAAPgABPD7IAAg8IAAA8IgGAAIAAg8IAAgDIAGAAIAAmBIijAAIAAGEIADAAIAAgDIAIAAIAAADIgIAAIAIAAIAAA8IgIAAIAAg8IAAA8IggAAIAAoEIDjAAIAAIEgABPC/IAAgDIAAADIgGAAgABJD7gAhJC/gAhOgZIAAiqICRAAIAACqg");
+	this.shape_4.graphics.f("#CCCCCC").s().p("AhJEKIAAgPIAAg8IAAgDIAAgDICSAAIAAADIAAADIAAA8IAAAPgABPD7IAAg8IAAgDIAAADIgGAAIAGAAIAAA8IgGAAIAAg8IAAgDIAGAAIAAmBIijAAIAAGEIADAAIAIAAIgIAAIAAgDIAIAAIAAADIAAA8IgIAAIAAg8IAAA8IggAAIAAoEIDjAAIAAIEgABPC/gAhRC/gAhOgZIAAiqICRAAIAACqg");
 	this.shape_4.setTransform(37.3,56.2);
 
 	this.shape_5 = new cjs.Shape();
@@ -78,6 +78,19 @@ p.nominalBounds = new cjs.Rectangle(-1,-1,75.9,117.1);
 	this.addChild(this.shape);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,47.2,29.8);
+
+
+(lib.onoff = function() {
+	this.initialize();
+
+	// Layer 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#5E5749").s().p("AmWKcQg0gwAAhLQAAhMA0gwQAqgmA0AAQA6AAAsAuQAsAuAABGQAABFgsAuQgsAug6AAQg0AAgqgmgAl5HSQgdAgAAAvQAAAvAdAfQAdAfAkAAQAkAAAdgfQAdgfAAgvQAAgwgdgfQgdgfgkAAQgkAAgdAfgADWK7QgTgBgIgGQgIgIAAgLQAAgMAIgHQAIgHATAAIAIAAIAAjMIgIAAQgTAAgIgIQgIgGAAgNQAAgLAIgHQAIgIATAAID1ABIAABPQAAATgHAIQgIAIgLAAQgMAAgHgIQgHgIAAgTIAAgbIiFAAIAABLIAuAAQAAgUAEgGQAHgNAPAAQALAAAIAJQAHAHAAATIAAA9QAAASgHAJQgIAHgLAAQgPAAgHgNQgEgFAAgVIguAAIAABNIA1AAQATAAAIAHQAIAHAAAMQAAALgIAIQgIAGgTABgAhgK7QgTgBgIgGQgIgIAAgLQAAgMAIgHQAIgHATAAIAIAAIAAjMIgIAAQgTAAgIgIQgIgGAAgNQAAgLAIgHQAIgIATAAIDzABIAABPQAAATgHAIQgIAIgLAAQgMAAgHgIQgHgIAAgTIAAgbIiDAAIAABLIAsAAQAAgUAEgGQAHgNAPAAQALAAAIAJQAHAHAAATIAAA9QAAASgHAJQgIAHgLAAQgPAAgHgNQgEgFAAgVIgsAAIAABNIAzAAQATAAAIAHQAIAHAAAMQAAALgIAIQgIAGgTABgAiSmkQg0gwAAhMQAAhLA0gwQAqgmA0AAQA4AAAsAuQAsAuAABFQAABGgsAuQgsAug4AAQg0AAgqgmgAh1puQgdAgAAAuQAAAwAdAfQAdAfAkAAQAkAAAbgfQAdgfAAgwQAAgvgdgfQgbgfgkAAQgkAAgdAfgAFGmFIiFjSIAACeIASAAQATAAAIAHQAIAHAAAMQAAALgIAIQgIAGgTABIhEAAQgTgBgIgGQgIgIAAgLQAAgMAIgHQAIgHARAAIAAjMIgJAAQgSAAgIgIQgIgGAAgNQAAgLAIgHQAIgIASAAIA9ABICFDRIAAidIgTAAQgTAAgIgIQgIgGAAgNQAAgLAIgHQAIgIATAAIBEABQATAAAIAHQAIAHAAALQAAAMgIAHQgIAIgQAAIAAEAg");
+	this.shape.setTransform(45.9,70.7);
+
+	this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,91.9,141.3);
 
 
 (lib.hat = function() {
@@ -199,7 +212,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,24.5,24.5);
 
 	// ears
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#8E6136").ss(1,1,1).p("Ai5AAIpGA7AjDgfIoygmAC3AHIJJA/ACtgcII6gj");
+	this.shape_2.graphics.f().s("#8E6136").ss(1,1,1).p("AjDgfIoygmAi5AAIpGA7ACtgcII6gjAC3AHIJJA/");
 	this.shape_2.setTransform(128.1,97);
 
 	this.shape_3 = new cjs.Shape();
@@ -297,19 +310,23 @@ p.nominalBounds = new cjs.Rectangle(-975.7,-540,538.1,302.3);
 (lib.catscene_pin = function() {
 	this.initialize();
 
+	// onoff
+	this.instance = new lib.onoff("synched",0);
+	this.instance.setTransform(727.1,343.4,1,1,0,0,0,45.9,70.7);
+
 	// pin sign
-	this.instance = new lib.pin12sign("synched",0);
-	this.instance.setTransform(1487.7,442.2,1,1,0,0,0,23.6,14.9);
+	this.instance_1 = new lib.pin12sign("synched",0);
+	this.instance_1.setTransform(1487.7,442.2,1,1,0,0,0,23.6,14.9);
 
 	// ddr sign
-	this.instance_1 = new lib.ddrb_sign("synched",0);
-	this.instance_1.setTransform(922.4,161.1,4.812,4.813,0,0,0,27.1,6.8);
+	this.instance_2 = new lib.ddrb_sign("synched",0);
+	this.instance_2.setTransform(922.4,161.1,4.812,4.813,0,0,0,27.1,6.8);
 
 	// port office
-	this.instance_2 = new lib.cat_office();
-	this.instance_2.setTransform(904.8,544.6,3.809,3.809,0,0,0,-727.7,-394.4);
+	this.instance_3 = new lib.cat_office();
+	this.instance_3.setTransform(904.8,544.6,3.809,3.809,0,0,0,-727.7,-394.4);
 
-	this.addChild(this.instance_2,this.instance_1,this.instance);
+	this.addChild(this.instance_3,this.instance_2,this.instance_1,this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(920,530,2049.5,1151.2);
 

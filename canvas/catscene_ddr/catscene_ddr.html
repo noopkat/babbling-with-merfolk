@@ -13,6 +13,8 @@
 var canvas, stage, exportRoot;
 
 function init() {
+	createjs.MotionGuidePlugin.install();
+
 	canvas = document.getElementById("canvas");
 	exportRoot = new lib.catscene_ddr();
 
