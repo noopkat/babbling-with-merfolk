@@ -525,10 +525,11 @@
 <script src="extensions/iframe/deck.iframes.js"></script>
 <script src="extensions/highlighter/shi_jquery.min.js"></script>
 
-<!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
   $(function() {
+    // start slides
     $.deck('.slide');
+
     function fixZoom() {
       var newZoom = 1;
       if (window.innerWidth < 1000) {
@@ -536,7 +537,14 @@
       }
       document.body.style.zoom = newZoom;
     }
-    window.addEventListener("resize", fixZoom);
+
+    // fix zoom if window size is fiddled with
+    window.addEventListener('resize', fixZoom);
+
+    // fix zoom on page load
+    $(document).ready(function() {
+      fixZoom();
+    });
   });
 </script>
 </body>
