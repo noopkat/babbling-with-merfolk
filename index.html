@@ -113,17 +113,17 @@
 
     <section class="slide noscale">
       <h1>✧ abstraction ✧</h1>
-      <img class="fullimage superfade" src="img/bokeh.jpg" />
+      <!-- <img class="fullimage superfade" src="img/bokeh.jpg" /> -->
     </section>
 
     <section class="slide noscale">
       <h1>> 700</h1>
-      <img class="fullimage superfade" src="img/bokeh.jpg" />
+      <!-- <img class="fullimage superfade" src="img/bokeh.jpg" /> -->
     </section>
 
     <section class="slide noscale">
       <h1>JavaScript though?</h1>
-      <img class="fullimage superfade" src="img/bokeh.jpg" />
+      <!-- <img class="fullimage superfade" src="img/bokeh.jpg" /> -->
     </section>
 
     <section class="slide whiteout">
@@ -138,7 +138,7 @@
 
     <section class="slide noscale">
       <h1>robot.doCoolThing()</h1>
-      <img class="fullimage superfade" src="img/bokeh.jpg" />
+      <!-- <img class="fullimage superfade" src="img/bokeh.jpg" /> -->
     </section>
     
     <section class="slide">
@@ -465,7 +465,7 @@
     </section>
 
     <section class="slide blackout">
-      <h1><pre>&gt; console.log('thank you');</pre></h1>
+      <h1 style="font-size: 3.2em"><pre>&gt; console.log('thank you');</pre></h1>
     </section>
 
 
@@ -514,6 +514,14 @@
 <script>
   $(function() {
     $.deck('.slide');
+    function fixZoom() {
+      var newZoom = 1;
+      if (window.innerWidth < 1000) {
+        newZoom = 0.5;
+      }
+      document.body.style.zoom = newZoom;
+    }
+    window.addEventListener("resize", fixZoom);
   });
 </script>
 </body>
