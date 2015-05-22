@@ -86,6 +86,7 @@
     </section>
 
     <section class="slide whiteout">
+      <h2>&nbsp; </h2>
       <img src="img/oledjs.png" alt="oled screen on a breadboard, displaing a pixelated monchrome picture of a cat's face" />
     </section>
 
@@ -532,8 +533,10 @@
 
     function fixZoom() {
       var newZoom = 1;
-      if (window.innerWidth < 1000) {
+      if (window.innerWidth < 1050) {
         newZoom = 0.5;
+      } else if (window.innerWidth < 1300) {
+        newZoom = 0.8;
       }
       document.body.style.zoom = newZoom;
     }
